@@ -11,7 +11,7 @@ let addTodo = () => {
             localStorage.setItem(`note${i}`, text);
 
             let todos = document.createElement("div");
-            todos.className = `alert alert-info d-flex justify-content-between align-items-center fs-1 text`;
+            todos.className = `alert bg-info d-flex justify-content-between align-items-center fs-1 text-body-emphasis`;
             todos.innerHTML = `${text}
             <button type="button" class="btn btn-danger">DELETE</button>`
             document.getElementsByClassName("container")[0].append(todos)
